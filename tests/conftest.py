@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver import ChromeOptions, FirefoxOptions
 
 from config import settings
+from http_clients.reqres_in_http_client import ReqresInHttpClient
 from pages.authorization_page import AuthorizationPage
 from pages.home_page import HomePage
 
@@ -109,3 +110,8 @@ def log_in_saucedemo(browser):
 def go_to_cart_saucedemo(browser, log_in_saucedemo):
     home_page = HomePage(browser)
     home_page.click_on_shopping_cart_link()
+
+
+@pytest.fixture
+def reqres_http_client():
+    return ReqresInHttpClient()
