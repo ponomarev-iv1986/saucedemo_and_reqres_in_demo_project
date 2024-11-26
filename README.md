@@ -50,3 +50,13 @@ pytest --remote --executor={executor} --browser={browser} --bv={browser_version}
 - executor - адрес Selenoid в формате 192.168.1.1
 - browser - один из браузеров селеноида
 - browser_version - версия браузера селеноида
+
+## Пример удаленного запуска тестов в стеке <a target="_blank" href="https://www.jenkins.io/doc/">Jenkins</a> - <a target="_blank" href="https://aerokube.com/selenoid/latest/">Selenoid</a> - <a target="_blank" href="https://allurereport.org/docs/">Allure</a>.
+
+### Джоба Jenkins для удаленного запуска тестов может выглядеть вот так:
+
+![This is an image](design/images/jenkins_job.png)
+
+### После прохождения тестов есть возможность зайти в Allure Report и ознакомиться с результатами:
+
+![This is an image](design/images/allure_report.png)
