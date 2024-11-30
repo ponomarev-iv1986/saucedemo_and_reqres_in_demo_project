@@ -33,8 +33,8 @@ pip install -r requirements.txt
 ```
 touch .env
 echo SAUCEDEMO_URL="https://www.saucedemo.com" >> .env
-echo SAUCEDEMO_LOGIN="any_user_login" >> .env
-echo SAUCEDEMO_PASSWORD="ani_user_password" >> .env
+echo SAUCEDEMO_LOGIN="any_user_login" >> .env  # Есть на главной странице сайта https://www.saucedemo.com
+echo SAUCEDEMO_PASSWORD="ani_user_password" >> .env  # Есть на главной странице сайта https://www.saucedemo.com
 echo REQRES_IN_URL="https://reqres.in" >> .env
 ```
 Запустить тесты:
